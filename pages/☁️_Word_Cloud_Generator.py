@@ -3,7 +3,7 @@ from io import StringIO
 
 # import arabic_reshaper
 import streamlit as st
-from bidi.algorithm import get_display
+# from bidi.algorithm import get_display
 from hazm import Normalizer, word_tokenize
 from loguru import logger
 from wordcloud import WordCloud
