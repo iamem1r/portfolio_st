@@ -1,8 +1,7 @@
 import time
 from io import StringIO
-import os
 
-import arabic_reshaper
+# import arabic_reshaper
 import streamlit as st
 from bidi.algorithm import get_display
 from hazm import Normalizer, word_tokenize
