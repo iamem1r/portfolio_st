@@ -1,12 +1,13 @@
 import time
 from io import StringIO
 
-# import arabic_reshaper
+import arabic_reshaper
 import streamlit as st
-# from bidi.algorithm import get_display
+from bidi.algorithm import get_display
 from hazm import Normalizer, word_tokenize
 from loguru import logger
 from wordcloud import WordCloud
+from src.data import DATA_DIR
 
 st.set_page_config(page_title="Word Cloud Generator", page_icon='☁️')
 
@@ -43,7 +44,7 @@ text_file = st.file_uploader(
 )
 
 
-stopwords = open('assets/stopwords.txt').readlines()
+stopwords = open(DATA_DIR / 'assets' / 'stopwords.txt').readlines()
 stopwords = list(map(str.strip, stopwords))
 stopwords = list(map(normalizer.normalize, stopwords))
 

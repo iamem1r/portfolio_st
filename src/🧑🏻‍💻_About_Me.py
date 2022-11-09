@@ -1,6 +1,7 @@
 from pathlib import Path
 from streamlit_lottie import st_lottie
 
+from src.data import DATA_DIR
 import streamlit as st
 from PIL import Image
 import requests
@@ -19,16 +20,15 @@ def load_lottieurl(url):
 
 
 # --- PATH SETTINGS ---
-absolute_dir = Path(__file__).parent.resolve()
 lottie_coding = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json")
 lottie_horiz = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_18QlHa.json")
-css_file = absolute_dir / "styles" / "main.css"
-resume_file = absolute_dir / "assets" / "CV.pdf"
-profile_pic = absolute_dir / "assets" / "profile-pic.JPG"
-nizek = absolute_dir / "assets" / "nizek.jpeg"
-tapsell = absolute_dir / "assets" / "tapsell.png"
-bazaar = absolute_dir / "assets" / "bazaar.png"
-raymand = absolute_dir / "assets" / "raymand.png"
+css_file = DATA_DIR / "styles" / "main.css"
+resume_file = DATA_DIR / "assets" / "CV.pdf"
+profile_pic = DATA_DIR / "assets" / "profile-pic.JPG"
+nizek = DATA_DIR / "assets" / "nizek.jpeg"
+tapsell = DATA_DIR / "assets" / "tapsell.png"
+bazaar = DATA_DIR / "assets" / "bazaar.png"
+raymand = DATA_DIR / "assets" / "raymand.png"
 
 
 # --- GENERAL SETTINGS ---
