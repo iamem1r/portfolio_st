@@ -1,7 +1,7 @@
 from pathlib import Path
 from streamlit_lottie import st_lottie
 
-from src.data import DATA_DIR
+from data import DATA_DIR
 import streamlit as st
 from PIL import Image
 import requests
