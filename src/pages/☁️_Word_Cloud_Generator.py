@@ -7,7 +7,7 @@ from bidi.algorithm import get_display
 from hazm import Normalizer, word_tokenize
 from loguru import logger
 from wordcloud import WordCloud
-from src.data import DATA_DIR
+from data import DATA_DIR
 
 st.set_page_config(page_title="Word Cloud Generator", page_icon='☁️')
 
@@ -39,8 +39,8 @@ text_file = st.file_uploader(
     type='.txt',
     key='text_file',
     help='.txt file up to 200MB',
-    label_visibility='collapsed',
-    on_change=change_upload_file_state
+    on_change=change_upload_file_state,
+    label_visibility="collapsed"
 )
 
 
