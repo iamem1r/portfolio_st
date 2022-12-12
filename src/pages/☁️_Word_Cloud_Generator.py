@@ -7,7 +7,7 @@ from bidi.algorithm import get_display
 from hazm import Normalizer, word_tokenize
 from loguru import logger
 from wordcloud import WordCloud
-from src.data import DATA_DIR
+from data import DATA_DIR
 
 st.set_page_config(page_title="Word Cloud Generator", page_icon='☁️')
 
