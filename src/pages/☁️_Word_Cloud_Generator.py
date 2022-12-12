@@ -39,8 +39,8 @@ text_file = st.file_uploader(
     type='.txt',
     key='text_file',
     help='.txt file up to 200MB',
-#     label_visibility='collapsed',
-    on_change=change_upload_file_state
+    on_change=change_upload_file_state,
+    label_visibility="collapsed"
 )
 
 
