@@ -5,10 +5,12 @@ from data import DATA_DIR
 import streamlit as st
 from PIL import Image
 import requests
+from loguru import logger
 
 PAGE_TITLE = " Portfolio | Amir Yamini"
 PAGE_ICON = ":wave:"
 
+logger.info("Set Page Config")
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
 
 
